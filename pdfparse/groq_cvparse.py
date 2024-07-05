@@ -33,5 +33,9 @@ class CVDataExtraction(BaseModel):
 
 structured_llm = chat.with_structured_output(CVDataExtraction)
 pdf_text = get_pdf_text(["pdfparse/sample.pdf"])
-resposnse = structured_llm.invoke(pdf_text)
+pdf_text1="""
+SKILLS
+ALGORITHMS (1 year), APACHE (1 year), JAVA (1 year), SCRIPTING (1 year), API (Less than 1
+year)."""
+resposnse = structured_llm.invoke(pdf_text1)
 print(resposnse)
