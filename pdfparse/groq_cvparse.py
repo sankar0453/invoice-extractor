@@ -39,3 +39,4 @@ ALGORITHMS (1 year), APACHE (1 year), JAVA (1 year), SCRIPTING (1 year), API (Le
 year)."""
 resposnse = structured_llm.invoke(pdf_text1)
 print(resposnse)
+# username='' email='' profile='' skills=['ALGORITHMS', 'APACHE', 'JAVA', 'SCRIPTING', 'API']
